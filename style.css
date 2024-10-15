@@ -1,0 +1,173 @@
+html, 
+body {
+    padding: 0;
+}
+
+
+/* Page Layout */
+
+body {
+    margin: 0;
+}
+
+/* Navbar Grid setup */
+
+.top-navbar {
+    display: flex;
+    margin: 1rem;
+    /* height: 1.5rem; */
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about-me-link {
+    margin-left: 1rem;
+}
+
+/* Blogposts Grid */
+
+#blog-posts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0.6rem;
+    grid-gap: 0.5em;
+}
+
+.blog-post {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#blog-posts-section {
+    margin-top: 1.6rem;
+}
+
+/* General Layout */
+
+#main-article-page {
+    margin: 1rem;
+    display: none;
+}
+
+#main-article-page-img {
+    min-height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#featured-blogpost {
+    background-image: url("images/article-img.png");
+    background-size: cover;
+    position: relative;
+    min-height: 293px;
+}
+
+#feature-text{
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+ #footer {
+    padding: 2rem;
+    text-align: center;
+    color: #ECECEC;
+    background-color: #202020;
+ }
+
+#recent-posts-heading {
+    text-align: center;
+}
+
+#post-four,
+#post-five,
+#post-six,
+#featured-article-page,
+#about-me-article {
+    display: none
+}
+
+#view-more-btn {
+    border: none;
+    background: white;
+    text-decoration: underline;
+    margin: 2rem auto;
+    display: flex;
+    
+}
+
+/* Styling */
+
+footer h3 {
+    margin-bottom: 0;
+}
+
+footer p {
+    margin-top: 0.2rem;
+}
+
+.blog-post h2 {
+    margin-bottom: 0;
+}
+
+#home-link,
+#about-me-link 
+{
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: black;
+    text-decoration: none;
+}
+
+#about-me-headshot-img {
+    border-radius: 100%;
+    height: 200px;
+    
+}
+
+#feature-text h1,
+#feature-text p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Interactivity */
+
+.view-more {
+    display: flex;
+}
+
+.blog-post:hover,
+#featured-blogpost,
+#view-more-btn:hover {
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px){
+    
+    #main-article-page-img {
+        margin: 3.3rem;
+    }
+    
+    #post-four,
+    #post-five,
+    #post-six {
+        display: flex;
+    }
+    
+    
+}
+
+
+
+/* need to create a toggle to toggle on the display of more of the blog posts on the click of the view more button */
+
+/* Also need to create a toggle that will display the about me article and toggle off the other content when the about me link is click */
+
